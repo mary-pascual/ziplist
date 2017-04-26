@@ -6,9 +6,9 @@
 const letterTest = ['a', 'b', 'c'];
 const numberTest = [1, 2, 3];
 
-function zipList(letter, number){
+function zipList(letter, number) {
   const newList = [];
-  for(let i = 0; i < letter.length; i++){
+  for (let i = 0; i < letter.length; i++) {
     newList.push(letter[i], number[i]);
   }
   return newList;
@@ -16,7 +16,7 @@ function zipList(letter, number){
 
 console.log(zipList(letterTest, numberTest));
 
-function zipListTheSimpleWay(letter, number){
+function zipListTheSimpleWay(letter, number) {
   return _.flatten(_.zip(letter, number));
 }
 
